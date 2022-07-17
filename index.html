@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container" id="upload1">
+        <h3>单一文件上传-FormData格式</h3>
+        <div>
+            <!-- 原生input控件因为样式难以控制，使用css进行隐藏 -->
+            <input type="file" />
+
+            <!-- 需要限制文件格式可以加上accept属性 -->
+            <!-- <input type="file" accept=".png,.jpg,.jpeg"/> -->
+
+            <div class="flex">
+                <button class="btn-select-file">选择文件</button>
+                <button class="btn-upload">上传</button>
+            </div>
+            <ul class="hidden file-list">
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="node_modules/axios/dist/axios.min.js"> </script>
+<script src="node_modules/qs/dist/qs.js"> </script>
+<script src="node_modules/spark-md5/spark-md5.min.js"> </script>
+<script src="js/uploadAxios.js"> </script>
+<script src="js/index.js"> </script>
+
+</html>

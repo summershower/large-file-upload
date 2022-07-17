@@ -1,0 +1,92 @@
+body {
+    background: #EFEFEF;
+}
+
+.container {
+    margin: 30px auto 0;
+    padding: 20px 30px 30px;
+    width: 500px;
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
+}
+button {
+    border: none;
+}
+input[type='file'] {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-select-file {
+    width: fit-content;
+    padding: 10px 20px;
+    color: #FFF;
+    background: rgb(35, 102, 80);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-select-file:hover {
+    background: rgb(44, 131, 102);
+}
+
+.btn-upload {
+    margin-left: 10px;
+    width: fit-content;
+    padding: 10px 20px;
+    color: #FFF;
+    background: rgb(36, 79, 104);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-upload:hover {
+    background: rgb(62, 116, 178);
+}
+
+.loading {
+    position: relative;
+    background: #CCC;
+    cursor: default;
+}
+
+.loading::after {
+    content: 'loading';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #CCC;
+    border-radius: 7px;
+    pointer-events: none;
+}
+
+.loading:hover {
+    background: #CCC;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.hidden {
+    display: none;
+}
+
+.remove {
+    margin: 0 5px;
+    color: darkred;
+    cursor: pointer;
+}
