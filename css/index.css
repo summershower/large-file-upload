@@ -25,14 +25,14 @@ input[type='file'] {
     width: fit-content;
     padding: 10px 20px;
     color: #FFF;
-    background: rgb(35, 102, 80);
+    background: rgb(63, 156, 125);
     border-radius: 7px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn-select-file:hover {
-    background: rgb(44, 131, 102);
+    background: rgb(82, 189, 153);
 }
 
 .btn-upload {
@@ -40,14 +40,14 @@ input[type='file'] {
     width: fit-content;
     padding: 10px 20px;
     color: #FFF;
-    background: rgb(36, 79, 104);
+    background: rgb(39, 139, 170);
     border-radius: 7px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn-upload:hover {
-    background: rgb(62, 116, 178);
+    background: rgb(107, 160, 221);
 }
 
 .loading {

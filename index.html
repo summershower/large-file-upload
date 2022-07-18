@@ -27,6 +27,34 @@
             </ul>
         </div>
     </div>
+
+    <div class="container" id="upload2">
+        <h3>单一文件上传-Base64(仅限图片)</h3>
+        <div>
+            <input type="file" accept=".png,.jpg,.jpeg,.gif"/>
+            <div class="flex">
+                <button class="btn-select-file">选择文件</button>
+                <button class="btn-upload">上传</button>
+            </div>
+            <ul class="hidden file-list">
+            </ul>
+        </div>
+    </div>
+
+    <div class="container" id="upload3">
+        <h3>单一文件上传-携带哈希名称</h3>
+        <div>
+            <input type="file"/>
+            <div class="flex">
+                <button class="btn-select-file">选择文件</button>
+                <button class="btn-upload">上传</button>
+            </div>
+            <ul class="hidden file-list">
+            </ul>
+        </div>
+    </div>
+
+
 </body>
 <script src="node_modules/axios/dist/axios.min.js"> </script>
 <script src="node_modules/qs/dist/qs.js"> </script>
