@@ -1,8 +1,12 @@
 const express = require('express')
+const cors = require('cors')
 const useRouter = require('./router')
 
 // 创建express示例
 const app = express()
+
+// 解决跨域
+app.use(cors())
 
 // 监听端口
 app.listen(9999, () => {
